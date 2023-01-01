@@ -131,7 +131,7 @@ while True:
                 face_names = []
                 for face_encoding in face_encodings:
                     matches = face_recognition.compare_faces(known_face_encodings, face_encoding)
-                    name = "A lil Bitch"
+                    name = "Not Justin"
                     face_distances = face_recognition.face_distance(known_face_encodings, face_encoding)
                     best_match_index = np.argmin(face_distances)
                     if matches[best_match_index]:
